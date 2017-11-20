@@ -32,7 +32,7 @@ if(isset($_GET) && !empty($_GET["item_id"]))
 		$_SESSION["cart"]->insert(array(
 			'id' => $_GET["item_id"],
 			'name' => $row["product_name"],
-			'price' => $row["product_price"],
+			'price' => $row["product_price"]*3,
 			'quantity' => 1
 		));
 	}
